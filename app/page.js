@@ -6,7 +6,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#fafaf9] text-stone-900 font-sans">
-      {/* Navbar com efeito de vidro */}
       <header className="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md border-b border-stone-200 px-6 py-4 flex justify-between items-center">
         <div className="flex items-center gap-2">
           <div className="bg-emerald-600 p-1.5 rounded-lg shadow-lg shadow-emerald-100">
@@ -130,7 +129,7 @@ export default function Home() {
             />
             <div className="h-10 w-[1px] bg-stone-200 hidden md:block" />
             <div className="text-left">
-              <h4 className="text-xl font-black text-emerald-800 uppercase tracking-tighter leading-none">pintura no caps</h4>
+              <h4 className="text-xl font-black text-emerald-800 uppercase tracking-tighter leading-none">pintura na horta do caps</h4>
               <p className="text-stone-400 text-xs font-bold uppercase tracking-widest mt-1">Nova Andradina - MS</p>
             </div>
           </div>
