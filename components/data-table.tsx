@@ -39,16 +39,15 @@ import { Area, AreaChart, CartesianGrid, XAxis } from "recharts"
 import { toast } from "sonner"
 import { z } from "zod"
 
-import { useIsMobile } from "@/hooks/use-mobile"
-import { Badge } from "@/Components/ui/badge"
-import { Button } from "@/Components/ui/button"
+import { Badge } from "./ui/badge"
+import { Button } from "./ui/button"
 import {
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
   type ChartConfig,
-} from "@/Components/ui/chart"
-import { Checkbox } from "@/Components/ui/checkbox"
+} from "./ui/chart"
+import { Checkbox } from "./ui/checkbox"
 import {
   Drawer,
   DrawerClose,
@@ -58,7 +57,7 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@/Components/ui/drawer"
+} from "./ui/drawer"
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -66,9 +65,9 @@ import {
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/Components/ui/dropdown-menu"
-import { Input } from "@/Components/ui/input"
-import { Label } from "@/Components/ui/label"
+} from "./ui/dropdown-menu"
+import { Input } from "./ui/input"
+import { Label } from "./ui/label"
 import {
   Select,
   SelectContent,
@@ -76,8 +75,8 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/Components/ui/select"
-import { Separator } from "@/Components/ui/separator"
+} from "./ui/select"
+import { Separator } from "./ui/separator"
 import {
   Table,
   TableBody,
@@ -85,14 +84,15 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/Components/ui/table"
+} from "./ui/table"
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "@/Components/ui/tabs"
+} from "./ui/tabs"
 import { GripVerticalIcon, CircleCheckIcon, LoaderIcon, EllipsisVerticalIcon, Columns3Icon, ChevronDownIcon, PlusIcon, ChevronsLeftIcon, ChevronLeftIcon, ChevronRightIcon, ChevronsRightIcon, TrendingUpIcon } from "lucide-react"
+import { useIsMobile } from "../hooks/use-mobile"
 
 export const schema = z.object({
   id: z.number(),

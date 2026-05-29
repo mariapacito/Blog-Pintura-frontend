@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { Palette, ArrowLeft } from "lucide-react";
-import { Button } from "../../Components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../../Components/ui/card";
-import { Input } from "../../Components/ui/input";
-import { Label } from "../../Components/ui/label";
+import { Button } from "../../../Components/ui/button";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../../../Components/ui/card";
+import { Input } from "../../../Components/ui/input";
+import { Label } from "../../../Components/ui/label";
 
 export default function Login() {
   return (

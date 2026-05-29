@@ -1,6 +1,6 @@
-import { Button } from "@/Components/ui/button"
-import { Separator } from "@/Components/ui/separator"
-import { SidebarTrigger } from "@/Components/ui/sidebar"
+import { Button } from "./ui/button"
+import { Separator } from "./ui/separator"
+import { SidebarTrigger } from "./ui/sidebar"
 
 export function SiteHeader() {
   return (

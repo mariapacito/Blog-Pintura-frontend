@@ -1,4 +1,4 @@
-import Pagina from '../Components/Pagina';
+import Pagina from '../../Components/Pagina';
 
 export default function Home(){
 return (

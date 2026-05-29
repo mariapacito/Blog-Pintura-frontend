@@ -1,11 +1,8 @@
-"use client"
-
 import * as React from "react"
 
-import { NavDocuments } from "@/Components/nav-documents"
-import { NavMain } from "@/Components/nav-main"
-import { NavSecondary } from "@/Components/nav-secondary"
-import { NavUser } from "@/Components/nav-user"
+import { NavMain } from "./nav-main"
+import { NavSecondary } from "./nav-secondary"
+import { NavUser } from "./nav-user"
 import {
   Sidebar,
   SidebarContent,
@@ -14,8 +11,9 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from "@/Components/ui/sidebar"
+} from "./ui/sidebar"
 import { LayoutDashboardIcon, ListIcon, ChartBarIcon, FolderIcon, UsersIcon, CameraIcon, FileTextIcon, Settings2Icon, CircleHelpIcon, SearchIcon, DatabaseIcon, FileChartColumnIcon, FileIcon, CommandIcon } from "lucide-react"
+import { NavDocuments } from "./nav-documents"
 
 const data = {
   user: {
