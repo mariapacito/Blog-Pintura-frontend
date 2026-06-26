@@ -1,6 +1,6 @@
 "use client";
 
-import { ChartBar, LayoutDashboard, Link, Link2, Wallet } from "lucide-react";
+import { ChartBar, LayoutDashboard, Link, Link2, Wallet, MessageSquare } from "lucide-react";
 
 import {
   Sidebar,
@@ -36,6 +36,11 @@ const data = {
       title: "Plans",
       url: "/Plans",
       icon: Wallet,
+    },
+        {
+      title: "Post",
+      url: "/post-admin",
+      icon: MessageSquare,
     }
   ],
 };
