@@ -2,7 +2,7 @@
 import { NextResponse } from "next/server";
 
 // Lista de rotas que precisam de login
-const rotasPrivadas = ["/dashboard", "/links"];
+const rotasPrivadas = ["/dashboard", "/links", "/post-admin"];
 
 // Lista de rotas que NÃO devem ser acessadas se já estiver logado
 const rotasDeAuth = ["/login", "/register"];
@@ -38,5 +38,5 @@ export async function proxy(request) {
 
 // Define em quais rotas o middleware roda
 export const config = {
-  matcher: ["/dashboard/:path*", "/relatorio/:path*", "/login", "/register"],
+  matcher: ["/dashboard/:path*", "/relatorio/:path*", "/login", "/register", "/post-admin"],
 };

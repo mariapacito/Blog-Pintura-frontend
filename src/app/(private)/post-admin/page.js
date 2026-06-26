@@ -28,9 +28,9 @@ export default function PostsAdmin() {
 
   async function fetchPosts() {
     setLoading(true);
-    const res = await fetch(API);
+    const res = await fetch(API, { credentials: "include" });
     const data = await res.json();
-    setPosts(data);
+    setPosts(Array.isArray(data) ? data : []); // ✅ garante array
     setLoading(false);
   }
 
